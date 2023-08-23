@@ -50,6 +50,10 @@ export default {
 
 <template>
   <MyHeader></MyHeader>
+  <li class="nav-item"
+              v-for="link in this.menuLinks">
+                <a class="nav-link" href="#">{{link.link}}</a>
+              </li>
   <MyFooter></MyFooter>
 </template>
 

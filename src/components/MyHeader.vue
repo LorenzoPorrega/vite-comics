@@ -1,4 +1,6 @@
 <script>
+import data from '../App.vue';
+
 export default {
 
 }
@@ -18,8 +20,8 @@ export default {
           <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="nav nav-underline d-flex align-items-end">
               <li class="nav-item"
-              v-for="link in this.menuLinks">
-                <a class="nav-link" href="#">{{link}}</a>
+              v-for="link in $parent.menuLinks">
+                <a class="nav-link" href="#">{{link.link}}</a>
               </li>
             </ul>
           </div>
